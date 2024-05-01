@@ -15,31 +15,4 @@ window.addEventListener("load", (el) => {
 
         circle.style.left = mouseX - circle.offsetWidth / 2 + 'px';
         circle.style.top = mouseY - circle.offsetHeight / 2 + 'px';
-    });
-
-    Array.from(document.getElementsByClassName("contact")).forEach((contact) => {
-        contact.addEventListener("click", (ev) => {
-            const currentUrl = window.location.href;
-            switch (contact.id) {
-                case "email":
-                    window.location.href = "mailto:rhssh@rhssh.xyz&body=you should kill yourself, NOW!";
-                    setTimeout(function() {
-                        window.location.href = currentUrl;
-                    }, 500);
-                    break;
-
-                case "twitter":
-                    window.location.href = "https://twitter.com/nordrtp";
-                    break;
-
-                case "snapchat":
-                    window.location.href = "https://snapchat.com/add/visualmedium";
-                    break;
-
-                case "matrix":
-                    window.location.href = "https://matrix.to/#/@t1nklas:matrix.org";
-                    break;
-            }
-        })
-    })
-})
+    });
