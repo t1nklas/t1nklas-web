@@ -8,7 +8,6 @@ body {  /* top header coloring and bg */
     width: 100vw;
     position: relative;
     user-select: none;
-    user-zoom: none;
 }
 
 body > *{
