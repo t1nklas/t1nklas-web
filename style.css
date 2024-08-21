@@ -1,0 +1,187 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+   body {
+
+    background: #161b20;
+  font-size: 0.875em;
+  font-family: monospace;
+  padding: 0;
+  margin: 0;
+  /*background: linear-gradient(rgb(251, 220, 220, 0.15), rgb(251, 220, 220, 0.15)), url("/itchmemorycover.png");*/
+  }
+  
+  .border{
+
+  border: 3px double #3fba4e;
+
+}
+
+.nav{
+    font-size: 1.25em
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+  
+  .test{
+    display: inline-flex;
+  }
+  
+.wrapper {
+  background: none;
+  top: 0;
+  margin: 0 auto;
+  width: 870px;
+  }
+ 
+.sidebar-left, .sidebar-right {
+  width: 175px;
+   padding-top: 10px;
+  }
+  
+.main {
+  width: 500px;
+  margin-left: 0px;
+  padding: 10px;
+  }
+  
+.sidebar-left {
+  margin-left: 0px;
+  }
+  
+.wrapper{
+  color:#0f1317;
+  }
+  
+  .links a
+  {
+     /*color: #5b7a9b;*/
+     color: #63c64d;
+  }
+  
+    .linkclr a
+  {
+     /*color: #5b7a9b;*/
+     color: #5b7a9b;
+  }
+  
+  .small{
+    color: #5b7a9b;
+    }
+  
+.box {
+  border: 3px solid #3fba4e;
+  color: #63c64d;
+   background: #0f1317;
+  /*background: #567185;*/
+  padding: 0px;
+  }
+  
+  
+.header {
+  border: 3px solid #3fba4e;
+  color: #63c64d;
+  /*background: rgb(107, 222, 58);*/
+  /*background: linear-gradient(rgb(251, 220, 220, 0.75), rgb(251, 220, 220, 0.75));*/
+  text-align: center;
+  margin-top: 15px;
+  top: 0;
+  height: auto;
+    background: #0f1317;
+  }
+  
+.links {
+  text-align: center;
+  margin-top: 1em;
+  }
+  
+  .link {
+    margin: 0px 25px;
+  }
+  
+.title { /*suppress title, since we're putting the title as text in the header box*/
+  display: none;
+  }
+
+.footer {
+  height: 0;
+  }
+  
+.box h1, .box h2, .box h3 {
+  /*background:#1f252b;*/
+  margin: 0;
+  padding: 0.35em 0.25em 0.3em 0.25em;
+  text-align: center;
+  border-bottom: 3px double #3fba4e;
+   color:#63c64d;
+  }
+  
+.inner{
+  padding: 0.25em 1em 0.3em 1em;
+  font-size: 1.075em;
+  }
+  
+  .linkclr{
+    padding:0;
+  }
+  
+/* For narrow screens: slightly narrows sidebars, and makes the width
+ * of the main/center div flexible (sized relative to viewport width.)
+ */
+@media(max-width:880px) {
+  .wrapper {
+    width: calc(340px + 50vw);
+    }
+  .sidebar-left, .sidebar-right {
+    width: 160px;
+    }
+  .main {
+    width: 50vw;
+    margin-left: 170px;
+      padding: 0px;
+    }
+      .test {
+      display: block;
+    }
+      .link {
+    
+    display: inline-flex;
+  }
+  }
+
+/*Mobile compatibility. Just turns it all into a vertical layout.*/  
+@media(orientation:portrait) {
+  .wrapper {
+    width: 96vw;
+    margin: 0 auto;
+    padding:0;
+    position: relative;
+    }
+    .test {
+     display: block;
+    }
+  .wrapper-2 {
+    width: 94vw;
+    margin: 0 auto;
+    padding:0;
+    position: relative;
+    }
+    .link {
+  
+    display: inline-flex;
+  }
+  .sidebar-left, .main, .sidebar-right {
+    position: relative;
+    width: 92vw;
+    margin: 0.25rem 1vw;
+    }
+    .main{
+      padding: 0px;
+    }
+  }
