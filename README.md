@@ -1,3 +1,3 @@
-## pls give ideas
+# Main website for t1nklas
 
-so silly!!!
+this is literally a website made for me, but feel free to for it or wtv, no credit needed :D

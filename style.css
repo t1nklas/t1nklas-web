@@ -1,20 +1,14 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
-
    body {
-
-    background: #161b20;
+  background: #100a1d;
   font-size: 0.875em;
   font-family: monospace;
   padding: 0;
   margin: 0;
-  /*background: linear-gradient(rgb(251, 220, 220, 0.15), rgb(251, 220, 220, 0.15)), url("/itchmemorycover.png");*/
   }
   
   .border{
 
-  border: 3px double #3fba4e;
+  border: 3px double #a28fda;
 
 }
 
@@ -56,44 +50,44 @@
   }
   
 .wrapper{
-  color:#0f1317;
+  color:#100a1d;
   }
   
   .links a
   {
      /*color: #5b7a9b;*/
-     color: #63c64d;
+     color: #e3d6fa;
   }
   
     .linkclr a
   {
      /*color: #5b7a9b;*/
-     color: #5b7a9b;
+     color: #e3d6fa;
   }
   
   .small{
-    color: #5b7a9b;
+    color: #e3d6fa;
     }
   
 .box {
-  border: 3px solid #3fba4e;
-  color: #63c64d;
-   background: #0f1317;
+  border: 3px solid #a28fda;
+  color: #e3d6fa;
+   background: #0c0816;
   /*background: #567185;*/
   padding: 0px;
   }
   
   
 .header {
-  border: 3px solid #3fba4e;
-  color: #63c64d;
+  border: 3px solid #a28fda;
+  color: #e3d6fa;
   /*background: rgb(107, 222, 58);*/
   /*background: linear-gradient(rgb(251, 220, 220, 0.75), rgb(251, 220, 220, 0.75));*/
   text-align: center;
   margin-top: 15px;
   top: 0;
   height: auto;
-    background: #0f1317;
+    background: #100a1d;
   }
   
 .links {
@@ -118,8 +112,8 @@
   margin: 0;
   padding: 0.35em 0.25em 0.3em 0.25em;
   text-align: center;
-  border-bottom: 3px double #3fba4e;
-   color:#63c64d;
+  border-bottom: 3px double #a28fda;
+   color:#e3d6fa;
   }
   
 .inner{
