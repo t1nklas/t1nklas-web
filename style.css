@@ -1,181 +1,162 @@
-   body {
-  background: #100a1d;
-  font-size: 0.875em;
-  font-family: monospace;
-  padding: 0;
-  margin: 0;
+  body {
+    background: #121212;
+    font-size: 0.875em;
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+    color: #e0e0e0;
   }
-  
-  .border{
 
-  border: 3px double #a28fda;
+  .border {
+    border: 3px double #444444;
+  }
 
-}
+  .nav {
+    font-size: 1.25em;
+  }
 
-.nav{
-    font-size: 1.25em
-}
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-  
-  .test{
+  .test {
     display: inline-flex;
   }
-  
-.wrapper {
-  background: none;
-  top: 0;
-  margin: 0 auto;
-  width: 870px;
+
+  .wrapper {
+    background: none;
+    top: 0;
+    margin: 0 auto;
+    width: 870px;
+    color: #e0e0e0;
   }
- 
-.sidebar-left, .sidebar-right {
-  width: 175px;
-   padding-top: 10px;
+
+  .sidebar-left, .sidebar-right {
+    width: 175px;
+    padding-top: 10px;
   }
-  
-.main {
-  width: 500px;
-  margin-left: 0px;
-  padding: 10px;
+
+  .main {
+    width: 500px;
+    margin-left: 0px;
+    padding: 10px;
   }
-  
-.sidebar-left {
-  margin-left: 0px;
+
+  .sidebar-left {
+    margin-left: 0px;
   }
-  
-.wrapper{
-  color:#100a1d;
+
+  .links a {
+    color: #bbbbbb;
   }
-  
-  .links a
-  {
-     /*color: #5b7a9b;*/
-     color: #e3d6fa;
+
+  .linkclr a {
+    color: #bbbbbb;
   }
-  
-    .linkclr a
-  {
-     /*color: #5b7a9b;*/
-     color: #e3d6fa;
+
+  .small {
+    color: #bbbbbb;
   }
-  
-  .small{
-    color: #e3d6fa;
-    }
-  
-.box {
-  border: 3px solid #a28fda;
-  color: #e3d6fa;
-   background: #0c0816;
-  /*background: #567185;*/
-  padding: 0px;
+
+  .box {
+    border: 3px solid #444444;
+    color: #e0e0e0;
+    background: #333333;
+    padding: 0px;
   }
-  
-  
-.header {
-  border: 3px solid #a28fda;
-  color: #e3d6fa;
-  /*background: rgb(107, 222, 58);*/
-  /*background: linear-gradient(rgb(251, 220, 220, 0.75), rgb(251, 220, 220, 0.75));*/
-  text-align: center;
-  margin-top: 15px;
-  top: 0;
-  height: auto;
-    background: #100a1d;
+
+  .header {
+    border: 3px solid #444444;
+    color: #e0e0e0;
+    text-align: center;
+    margin-top: 15px;
+    top: 0;
+    height: auto;
+    background: #121212;
   }
-  
-.links {
-  text-align: center;
-  margin-top: 1em;
+
+  .links {
+    text-align: center;
+    margin-top: 1em;
   }
-  
+
   .link {
     margin: 0px 25px;
   }
-  
-.title { /*suppress title, since we're putting the title as text in the header box*/
-  display: none;
+
+  .title {
+    display: none;
   }
 
-.footer {
-  height: 0;
+  .footer {
+    height: 0;
   }
-  
-.box h1, .box h2, .box h3 {
-  /*background:#1f252b;*/
-  margin: 0;
-  padding: 0.35em 0.25em 0.3em 0.25em;
-  text-align: center;
-  border-bottom: 3px double #a28fda;
-   color:#e3d6fa;
+
+  .box h1, .box h2, .box h3 {
+    margin: 0;
+    padding: 0.35em 0.25em 0.3em 0.25em;
+    text-align: center;
+    border-bottom: 3px double #444444;
+    color: #e0e0e0;
   }
-  
-.inner{
-  padding: 0.25em 1em 0.3em 1em;
-  font-size: 1.075em;
+
+  .inner {
+    padding: 0.25em 1em 0.3em 1em;
+    font-size: 1.075em;
   }
-  
-  .linkclr{
-    padding:0;
+
+  .linkclr {
+    padding: 0;
   }
-  
-/* For narrow screens: slightly narrows sidebars, and makes the width
- * of the main/center div flexible (sized relative to viewport width.)
- */
-@media(max-width:880px) {
-  .wrapper {
-    width: calc(340px + 50vw);
+
+  @media(max-width:880px) {
+    .wrapper {
+      width: calc(340px + 50vw);
     }
-  .sidebar-left, .sidebar-right {
-    width: 160px;
+    .sidebar-left, .sidebar-right {
+      width: 160px;
     }
-  .main {
-    width: 50vw;
-    margin-left: 170px;
+    .main {
+      width: 50vw;
+      margin-left: 170px;
       padding: 0px;
     }
-      .test {
+    .test {
       display: block;
     }
-      .link {
-    
-    display: inline-flex;
-  }
+    .link {
+      display: inline-flex;
+    }
   }
 
-/*Mobile compatibility. Just turns it all into a vertical layout.*/  
-@media(orientation:portrait) {
-  .wrapper {
-    width: 96vw;
-    margin: 0 auto;
-    padding:0;
-    position: relative;
+  @media(orientation:portrait) {
+    .wrapper {
+      width: 96vw;
+      margin: 0 auto;
+      padding: 0;
+      position: relative;
     }
     .test {
-     display: block;
+      display: block;
     }
-  .wrapper-2 {
-    width: 94vw;
-    margin: 0 auto;
-    padding:0;
-    position: relative;
+    .wrapper-2 {
+      width: 94vw;
+      margin: 0 auto;
+      padding: 0;
+      position: relative;
     }
     .link {
-  
-    display: inline-flex;
-  }
-  .sidebar-left, .main, .sidebar-right {
-    position: relative;
-    width: 92vw;
-    margin: 0.25rem 1vw;
+      display: inline-flex;
     }
-    .main{
+    .sidebar-left, .main, .sidebar-right {
+      position: relative;
+      width: 92vw;
+      margin: 0.25rem 1vw;
+    }
+    .main {
       padding: 0px;
     }
   }
