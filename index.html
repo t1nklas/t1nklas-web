@@ -1,111 +1,95 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>t1nklas - home</title>
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <div class = "wrapper"> 
-      <div class = "header">
-        <div class = "header-shadow">
-          <h1>t1nklas web</h1>
-        </div>
-      </div>
-      <div class = "title">
-        <h1>test?</h1>
-      </div>
-      <div class = "wrapper-2">
-        
-          <div class = "test">
-          <div class = "sidebar-left">
-          
-           <div class = "box">
-              <div class = "nav">
-              <h3 id = "section-1">Navigation</h3>
-              <div class = inner>
-              
-                  <div class = "linkclr">
-               
-                    <a href="/" title="refresh">> home</a><br>
-                    <a href="/about-me" title="refresh">> about me</a><br>
-                    <a href="/projects" title="refresh">> projects</a><br>
-                  </div>
-                  </div>
-              </div>
-              </div>
-              <br>
-              <div class = "box">
-                  <h3 id = "section-1">Socials</h3>
-                  <div class = inner>
-                  <br>
-                  Find me here!
-                  <div class ="linkclr">
-                    <a href="https://crumb.lt/lyra" title="refresh" target = "_blank" >fedi</a><br>
-                    <a href="https://github.com/t1nklas" title="refresh" target = "_blank">github</a><br><br>
-                    </div>
-                    
-                  </div>
-              </div>
-             
+    <title>t1nklas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen bg-gray-50 dark">
+    <div class="container mx-auto px-4 py-12 max-w-4xl">
+        <header class="flex flex-col md:flex-row items-center gap-8 mb-16">
+            <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                <img src="/images/pfp.jpg" alt="t1nklas profile" class="w-full h-full object-cover">
             </div>
-            
-               <div class = "main">
-               <span style="font-size: 1.25em">
-            <div class = "box">
-              <h2 id = "section-1">welcome!</h2>
-              <div class = inner>
-                <center>
-              <p>hello, welcome to my site! as you can probably tell, it's a work in progress. the site is mostly mobile friendly now... i think.</p>
-              <div align='center'><a href='https://www.websitecounterfree.com'><img src='https://www.websitecounterfree.com/c.php?d=9&id=61719&s=4' border='0' alt='Free Website Counter'></a><br ></a></small></div>
-                </center>
-            </div>
-            </div>
-            <br>
-            
-               <div class = "box">
-              <h2 id = "section-1">Disclosure</h2>
-              <div class = inner>
-              <center>
-                <p>Currently I've lost motivation to do anything right now, so don't expect alot of updates there and there :)</p>
-            </center>
-              </div>
-              
-            </div>
-            
-            </span>
-          </div>
-          
-          
-            <div class = "sidebar-right">
-              <div class = "box">
-              <div class = "nav">
-                  <h3 id = "section-1">the epic button</h3>
-                  <div class = inner>
-                  <p>thanks for visiting my site! check out my friend aswell: </p>
-                  <center>
-                    <a href="https://ari.lt/" title="ari-web badge" aria-label="Visit ari-web" rel="noopener noreferrer"> <img src="https://ari.lt/badge.png" loading="lazy" alt="ari-web badge" height="31" width="88" role="presentation" /> </a>
-                  </center>
+            <div class="text-center md:text-left flex-1">
+                <h1 class="text-4xl font-bold mb-2 gradient-text">t1nklas</h1>
+                <p class="text-lg text-gray-600 mb-2">malware analyst, music lover</p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="https://github.com/t1nklas" class="text-gray-500 hover:text-gray-700 transition-all">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://last.fm/user/al3r" class="text-gray-500 hover:text-blue-400 transition-all">
+                        <i class="fab fa-lastfm text-xl"></i>
+                    </a>
                 </div>
-                  
-                  </div>
-              </div>
-                 <br>
-               <div class = "box">
-                  <h3 id = "section-1">Email</h3>
-                  <div class = inner>
-                  <p>for inqueries contact: silly@t1nklas.lt</p>
-                 
-                  </div>
-              </div>
             </div>
-            
-          </div>
-        </div>
-      <br>
-      <div class = "footer"></div>
+            <button id="theme-toggle" class="px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-full shadow-md transition-all hover:scale-105">
+                <i id="theme-icon" class="fas fa-sun text-yellow-500"></i>
+            </button>
+        </header>
+
+        <main class="space-y-8">
+            <section class="bg-white rounded-xl shadow-md p-6 transition-all card-hover">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800">about me</h2>
+                <p class="text-gray-600 mb-4">
+                    i'm a quiet person that codes and does malware analysis
+                </p>
+                <p class="text-gray-600 mb-4">
+                    i like to go on long walks alone, listening to music, play badminton, sleep and just spend time with friends
+                </p>
+                <p class="text-gray-600">
+                    i also enjoy linux in general, always trying new things, even if its annoying *cough cough* gentoo with its emerge
+                </p>
+            </section>
+
+            <section class="bg-white rounded-xl shadow-md p-6 transition-all card-hover">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800">projects</h2>
+                <div class="space-y-6">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex-shrink-0 w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-stream text-blue-500 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-lg text-gray-800">crumb(less) fedi</h3>
+                            <p class="text-gray-600 mb-4">
+                                crumb.lt used to be my fediverse instance running akkoma, after some time i sadly shut it down since i couldnt keep up with moderation and other stuff
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="space-y-6">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex-shrink-0 w-16 h-16 bg-pink-100 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-question text-pink-500 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-lg text-gray-800">...</h3>
+                            <p class="text-gray-600">
+                                something will come out soon, keeping it secret for now :P
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white rounded-xl shadow-md p-6 transition-all card-hover">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800">some more stuff about me</h2>
+                <p class="text-gray-600">
+                    i deeply care about internet privacy and security, knowing how everything is right now — every major company needs your data, selling it, collecting as much as possible
+                </p>
+                <p class="text-gray-600 mt-4">
+                    i use arch btw (i'm sorry i had to)
+                </p>
+            </section>
+        </main>
+
+        <footer class="mt-16 text-center text-gray-500 text-sm">
+            <p>sleepy-web (t1nklas project)</p>
+        </footer>
     </div>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
