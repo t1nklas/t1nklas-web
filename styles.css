@@ -7,12 +7,12 @@ body {
 }
 
 body.dark {
-    background-color: #111827;
+    background-color: #0f0f0f;
     color: #e5e7eb;
 }
 
 body.dark .bg-white {
-    background-color: #1f2937;
+    background-color: #1e1e1e;
 }
 
 body.dark .text-gray-600,
