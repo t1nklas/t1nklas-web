@@ -101,7 +101,6 @@ h1 {
   letter-spacing: 2px;
   overflow: hidden;
   white-space: nowrap;
-  animation: type 3s steps(30);
 }
 
 h2 {
@@ -127,15 +126,6 @@ a {
 a:hover {
   color: white;
   background: black;
-}
-
-@keyframes type {
-  from { width: 0 }
-  to { width: 30ch }
-}
-
-@keyframes blink {
-  50% { opacity: 0; }
 }
 
 @keyframes float {
