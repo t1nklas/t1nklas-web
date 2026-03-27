@@ -1,61 +1,90 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>generic site.html</title>
-    <style>
-      body {
-        font-family: monospace;
-      }
-    </style>
-  </head>
+<html lang="en">
+<head>
+<meta name="title" content="T1NKLAS' SITE">
+<meta name="description" content="A place on the internet, that is free from bad.">
+<meta name="keywords" content="personal site, personal, about me, about page, t1nklas">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>t1nklas</title>
 
-  <body>
-    <strong>t1nklas's</strong> site for now
-    <br /><br />
-    
-    to be fair i took the idea from <a href="https://geohot.com">geohot..</a>
-    <br /><br />
-    
-    you can contact me through
-    <a href="https://t.me/t1nklas/">telegram</a>
-    or
-    <a href="mailto:hi@t1nklas.lt">e-mail</a>
-    <br /><br />
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap" rel="stylesheet">
+<link href="/style.css" rel="stylesheet">
 
-    <big><big><big><big>
-      <big><big>
-        &lt;big&gt;
-          site is in reconstruction
-        &lt;/big&gt;
-      </big></big>
-    </big></big></big></big>
-    <br /><br />
-    or i might keep it like this
-    <br />
-    ...oh well
+</head>
+<body>
 
-    <br /><br />
+<main>
 
-    <strong>all you need to know:</strong>
-    <br />
-    i like music
-    <br />
-    i use linux
-    <br />
-    i do random things on the internet
-    <br />
-    just another pixel on the interwebs
-    <br /><br />
+<nav>
+  <div class="tab active" onclick="switchTab('user')">~/User</div>
+  <div class="tab" onclick="switchTab('interests')">~/Interests</div>
+  <div class="tab" onclick="switchTab('contact')">~/Contact</div>
+  <div class="tab" onclick="switchTab('facts')">~/Facts</div>
+  <div class="tab" onclick="switchTab('quote')">~/Quote</div>
+</nav>
 
-    why the need for fancy css or js when you can just make this
-    <br />
-    i like the simplicity of the site
-    <br />
-    thats why itll most likely stay like this
-    <br /><br />
-    <br /><br />
-    xoxo,
-    <br />
-    t1nklas
-  </body>
+<div class="container">
+  <div class="pfp">
+    <img src="/img/pfp.jpeg" alt="pfp">
+  </div>
+
+  <div class="section active" id="user">
+    <div class="label">USER</div>
+    <h1 class="cursor">t1nklas</h1>
+    <p>LT / voice actor / audio nerd / malware analyst</p>
+  </div>
+
+  <div class="section" id="interests">
+    <div class="label">INTERESTS</div>
+    <p>audio, linux, programming, badminton, bowling, dnd, lore making, Lorem Ipsum, Sample Text</p>
+  </div>
+
+  <div class="section" id="contact">
+    <div class="label">CONTACT</div>
+    <p>Mastodon: <a href="https://river.group.lt/@t1nklas">@t1nklas@river.group.lt</a></p>
+    <p>E-Mail: <a href="mailto:t1@t1nklas.lt">t1@t1nklas.lt</a></p>
+    <h3>stuff are clickable, btw</h3>
+  </div>
+
+  <div class="section" id="facts">
+    <div class="label">FACTS</div>
+    <p>i use arch, btw</p>
+    <p>i like neon genesis evangelion a tiny bit</p>
+    <p>i like privacy</p>
+  </div>
+
+  <div class="section" id="quote">
+    <div class="label">QUOTE</div>
+    <p id="quoteText">loading...</p>
+  </div>
+</div>
+
+</main>
+
+<script>
+function switchTab(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  event.target.classList.add('active');
+}
+
+// placeholder fortune-style quotes
+const quotes = [
+  "As long the Earth, Sun, and Moon exist, everything will be alright.",
+  "You're all you have and you never even learned to like yourself!",
+  "Take care of yourself.",
+  "It is you, who has mistaken reality for the truth.",
+  "You must seize the future. It is what you live for!",
+  "It's mental static! I told you, if you HAVE to think, think in German!\n    -Asuka Langley"
+];
+
+document.getElementById('quoteText').innerText = quotes[Math.floor(Math.random() * quotes.length)];
+</script>
+
+</body>
 </html>

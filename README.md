@@ -1,3 +1,2 @@
-# my main website
-
-feel free to fork it, idc
+# my site
+evangelion themed
