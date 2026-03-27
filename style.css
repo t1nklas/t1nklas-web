@@ -119,11 +119,6 @@ h2 {
   margin-bottom: 10px;
 }
 
-.cursor::after {
-  content: "_";
-  animation: blink 1s infinite;
-}
-
 a {
   color: gray;
   text-decoration: none;
